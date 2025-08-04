@@ -71,7 +71,7 @@
 - 자료구조는 단순히 외워서 쓰는 것이 아니라, 데이터가 어떻게 흐르고 어떤 위치에서 다뤄지는지를 기준으로 선택하는 것이 핵심이다.
 - 삽입/삭제 위치와 시간 복잡도는 실무에서 코드 성능과 직결되며, 자료구조 선택의 근거가 된다.
 - 실제 프로젝트를 통해 알게 모르게 스택과 큐 구조를 사용해왔으며, 이를 의식하고 구조적으로 설계하는 것이 더 나은 개발로 이어진다.
-
+</details>
 <details>
 <summary><strong>Hash & Hash Table 정리</strong></summary>
 
@@ -118,16 +118,16 @@
 
 ### 코드 예시 (Python)
 
-# 일반 해시 사용
-# import hashlib
-# h = hashlib.sha256(b"mypassword").hexdigest()
-# print(h)  # 같은 입력이면 항상 같은 해시 출력
+* 일반 해시 사용
+import hashlib
+h = hashlib.sha256(b"mypassword").hexdigest()
+print(h)  # 같은 입력이면 항상 같은 해시 출력
 
-# Salt 사용 예시
-# import os
-# salt = os.urandom(16)
-# hashed = hashlib.pbkdf2_hmac('sha256', b"mypassword", salt, 100000)
-# print(hashed)
+* Salt 사용 예시
+import os
+salt = os.urandom(16)
+hashed = hashlib.pbkdf2_hmac('sha256', b"mypassword", salt, 100000)
+print(hashed)
 
 ---
-
+</details>
